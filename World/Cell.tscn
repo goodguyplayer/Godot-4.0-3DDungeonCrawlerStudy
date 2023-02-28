@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Cell" type="Area"]
+
+[node name="FloorTile" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 1 )
+
+[node name="RoofTile" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0, 8.74228e-08, 0, 0, -1, 0, 2, 0 )
+mesh = SubResource( 1 )
+
+[node name="NorthTile" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0, 1, 0, 0, -4.37114e-08, 0, 1, -1 )
+mesh = SubResource( 1 )
+
+[node name="SouthTile" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 0, 1, 0, 0, -4.37114e-08, 0, 1, 1 )
+mesh = SubResource( 1 )
+
+[node name="EastTile" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, 4.37114e-08, 0, 0, 1, 1, 0, 1.91069e-15, 1, 1, 0 )
+mesh = SubResource( 1 )
+
+[node name="WestTile" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-08, 0, -4.37114e-08, 0, 0, 1, -1, 0, 1.91069e-15, -1, 1, 0 )
+mesh = SubResource( 1 )
