@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddkdqq5oyld2u"]
+
+[ext_resource type="Texture2D" uid="uid://duce3eh2wcvwr" path="res://Textures/texture_07.png" id="1_tf8xq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ki80u"]
+texture = ExtResource("1_tf8xq")
+texture_region_size = Vector2i(32, 32)
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_i743t"]
+tile_size = Vector2i(32, 32)
+sources/1 = SubResource("TileSetAtlasSource_ki80u")
+
+[node name="MapCreator" type="TileMap"]
+tile_set = SubResource("TileSet_i743t")
+cell_quadrant_size = 32
+format = 2
